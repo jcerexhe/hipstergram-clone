@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @upload.user.inspect %>
+</p>
+
+<p>
+  <strong>Photo:</strong>
+  <%= @upload.photo %>
+</p>
+
+<p>
+  <strong>Caption:</strong>
+  <%= @upload.caption %>
+</p>
+
+<%= link_to 'Edit', edit_upload_path(@upload) %> |
+<%= link_to 'Back', uploads_path %>
